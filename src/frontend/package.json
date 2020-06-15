@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev:front": "webpack --mode development --config ./webpack.config.js",
-    "watch:front": "webpack --mode development --config ./webpack.config.js --watch"
+    "watch:front": "webpack --mode development --config ./webpack.config.js --watch",
+    "live:front": "light-server -c .lightrc"
   },
   "keywords": [],
   "author": "",
