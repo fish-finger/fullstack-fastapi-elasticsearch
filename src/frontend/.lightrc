@@ -1,0 +1,7 @@
+{
+    "serve": "./dist",
+    "port": 8000,
+    "watchexps": [
+        "**.js"
+    ]
+}
