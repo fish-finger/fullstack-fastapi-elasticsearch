@@ -6,7 +6,9 @@
   "author": "Cleóbulo Oliveira <cleobulo.oliveira@itriad.org.br>",
   "license": "MIT",
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "watch:front": "yarn --cwd ./src/frontend watch",
+    "live:front": "yarn --cwd ./src/frontend live"
   },
   "devDependencies": {
     "commitizen": "^4.1.2",

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:front": "webpack --mode development --config ./webpack.config.js",
-    "watch:front": "yarn dev:front --watch",
-    "live:front": "light-server -c .lightrc"
+    "dev": "webpack --mode development --config ./webpack.config.js",
+    "watch": "yarn dev --watch",
+    "live": "light-server -c .lightrc"
   },
   "keywords": [],
   "author": "",
