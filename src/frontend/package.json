@@ -1,16 +1,12 @@
 {
   "name": "frontend",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev:front": "webpack --mode development --config ./webpack.config.js",
     "watch:front": "yarn dev:front --watch",
-    "live:front": "light-server -c .lightrc",
-    "release:major": "release major",
-    "release:minor": "release minor",
-    "release:patch": "release patch",
-    "commit": "git-cz"
+    "live:front": "light-server -c .lightrc"
   },
   "keywords": [],
   "author": "",
@@ -19,11 +15,8 @@
     "@types/axios": "^0.14.0",
     "@types/react": "^16.9.36",
     "@types/react-dom": "^16.9.8",
-    "commitizen": "^4.1.2",
-    "cz-conventional-changelog": "^3.2.0",
     "html-webpack-plugin": "^4.3.0",
     "light-server": "^2.7.0",
-    "release": "^6.1.0",
     "source-map-loader": "^1.0.0",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5",
@@ -34,10 +27,5 @@
     "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   }
 }
