@@ -1,6 +1,6 @@
 {
   "name": "fullstack-fastapi-elasticsearch",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "scripts/run.sh",
   "repository": "https://github.com/cleobulo/fullstack-fastapi-elasticsearch.git",
   "author": "Cleóbulo Oliveira <cleobulo.oliveira@itriad.org.br>",
