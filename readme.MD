@@ -12,6 +12,14 @@ Pratice programming using this libs:
 For some study i am using specially this tutorials:
 - [webpack+react](https://www.typescriptlang.org/docs/handbook/react-&-webpack.html)
 
+
+# Install Dependencies
+
+*Open the shell(or git bash on Windows)*
+
+1. Navigate to proeject repository
+2. In the shell run `./scripts/install.sh`
+
 # Run
 
 *The dependencies have was to been installed*
@@ -30,5 +38,5 @@ For running backend:
 For running frontend:
 
 1. Navigate to project repository
-2. run the `./scripts/run-server.sh`
-3. In a new shell instance run the `./scripts/run-client-server.sh`
+2. run the `yarn watch:front`
+3. In a new shell instance run the `yarn live:front`
