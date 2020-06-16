@@ -1,12 +1,13 @@
 {
   "name": "fullstack-fastapi-elasticsearch",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "scripts/run.sh",
   "repository": "https://github.com/cleobulo/fullstack-fastapi-elasticsearch.git",
   "author": "Cleóbulo Oliveira <cleobulo.oliveira@itriad.org.br>",
   "license": "MIT",
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "release:minor": "release minor"
   },
   "devDependencies": {
     "commitizen": "^4.1.2",
