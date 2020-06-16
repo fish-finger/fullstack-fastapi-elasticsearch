@@ -7,9 +7,9 @@
     "dev:front": "webpack --mode development --config ./webpack.config.js",
     "watch:front": "yarn dev:front --watch",
     "live:front": "light-server -c .lightrc",
-    "release:major": "yarn release - --major",
+    "release:major": "release major",
     "release:minor": "release minor",
-    "release:patch": "yarn release - --patch",
+    "release:patch": "release patch",
     "commit": "git-cz"
   },
   "keywords": [],
