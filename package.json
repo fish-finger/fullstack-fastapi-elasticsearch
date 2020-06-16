@@ -8,7 +8,8 @@
   "scripts": {
     "commit": "git-cz",
     "watch:front": "yarn --cwd ./src/frontend watch",
-    "live:front": "yarn --cwd ./src/frontend live"
+    "live:front": "yarn --cwd ./src/frontend live",
+    "postinstall": "cd src/frontend && yarn install"
   },
   "devDependencies": {
     "commitizen": "^4.1.2",
