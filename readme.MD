@@ -40,3 +40,12 @@ For running frontend:
 1. Navigate to project repository
 2. run the `yarn watch:front`
 3. In a new shell instance run the `yarn live:front`
+
+## User mode
+
+*Only with Docker for now*
+*Open another shell(or git bash on Windows)*
+
+1. Navigate to the project repository
+2. run the `docker-compose up`
+3. Open the http://localhost:8099 on browser
