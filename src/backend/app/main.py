@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from api import api_router
+from core.config import settings
 
 app = FastAPI()
 
@@ -13,9 +15,4 @@ app.add_middleware(
     allow_headers=['*']
 )
 
-@app.get('/')
-def init():
-    return { 
-        'project': 'FULLSTACK-FASTAPI-ELASTICSEARCH',
-        'version': '0.0.0' 
-    }
+app.include_router(api_router, prefix=settings.API_V1_STR)
