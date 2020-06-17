@@ -2,6 +2,7 @@
     "serve": "./dist",
     "port": 8099,
     "watchexps": [
-        "**.js"
+        "**.js",
+        "**.css"
     ]
 }
