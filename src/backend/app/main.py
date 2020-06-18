@@ -5,10 +5,7 @@ from core.config import settings
 
 app = FastAPI()
 
-origins = [
-    'http://localhost:8099', 'http://localhost:8099/**',
-    'http://localhost:4000', 'http://localhost:4000/**'
-]
+origins = list(settings.ORIGINS)
 
 app.add_middleware(
     CORSMiddleware,
