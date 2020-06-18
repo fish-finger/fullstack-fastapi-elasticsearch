@@ -1,45 +1,20 @@
 import * as React from 'react';
-import { Greetings } from './components/Greetings';
-import { todoList } from './controller';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
 
-interface StateType {
-    project: string;
-    version: string;
-}
-
-export class App extends React.Component<any, StateType> {
-
-    private _isMounted = true;
-
-    constructor(props: any) {
-        super(props);
-
-        this.state = {
-            project: ``,
-            version: ``
-        };
-    }
-    
-    async componentDidMount() {
-        const { data } = await todoList.getConfig();
-        
-        if (this._isMounted) {
-            this.setState({
-                project: data.project,
-                version: data.version
-            });
-        }
-    }
-
-    componentWillUnmount() {
-        this._isMounted = false;
-    }
-
+export class App extends React.Component {
     render() {
-        const { project, version } = this.state;
-
         return (
-            <Greetings greeting={`Application from ${project} project v${version} running...`}></Greetings>
+            <Router>
+                <Navbar />
+                
+                <Route exact path="/" component={Home}>
+                </Route>
+                <Route exact path="/about" component={About}>
+                </Route>
+            </Router>
         );
     }
 
