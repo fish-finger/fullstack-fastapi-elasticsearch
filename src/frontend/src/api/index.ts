@@ -1,6 +1,7 @@
 import axios from 'axios';
+import * as environments from '../utils/environments'
 
 export const API = axios.create({
-    baseURL: `http://localhost:8000/api/v1/`,
+    baseURL: environments.API_V1_HOST,
     timeout: 3000
 });
