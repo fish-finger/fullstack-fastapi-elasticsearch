@@ -5,4 +5,4 @@ router = APIRouter()
 
 @router.get('/', status_code=status.HTTP_200_OK)
 def initial():
-    return { 'api': settings.API_V1_STR, 'porject': settings.PROJECT_NAME }
+    return { 'api': settings.API_V1_STR, 'project': settings.PROJECT_NAME }
