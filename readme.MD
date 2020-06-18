@@ -44,6 +44,7 @@ For running frontend:
 ## User mode
 
 *Only with Docker for now*
+
 *Open another shell(or git bash on Windows)*
 
 1. Navigate to the project repository
