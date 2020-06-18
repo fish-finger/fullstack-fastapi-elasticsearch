@@ -4,8 +4,15 @@ services:
     build: ./src/backend/
     ports:
     - "8000:8000"
+    depends_on:
+      - database
   
   frontend:
     build: ./src/frontend/
     ports:
-    - "8099:8099"
+    - "4000:4000"
+    depends_on:
+      - backend
+
+  database:
+    image: "bitnami/elasticsearch:latest"
