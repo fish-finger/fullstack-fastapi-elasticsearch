@@ -16,6 +16,7 @@ class Database:
     
     def search(self, index, body={'query': {'match_all': {}}}):
         try:
+            self.__es.indices.refresh(index=index)
             return self.__es.search(
                 index=index,
                 body=body
