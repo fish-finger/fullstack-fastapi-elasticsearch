@@ -5,9 +5,11 @@ import './style.css';
 export const Home = () => {
     const [textInput, setTextInput] = React.useState(`http://`);
     const handleChange = (event: any) => (setTextInput(event.target.value));
-    const onClickDownload = () => (todoList.addUrl(
-        textInput.startsWith('http://') ? textInput : `http://${textInput}`
-    ));
+    const onClickDownload = async () => {
+        const { data } = await todoList.addUrl(
+            textInput.startsWith('http://') ? textInput : `http://${textInput}`
+        )
+    };
     
     return (
         <div className="fetch-form">

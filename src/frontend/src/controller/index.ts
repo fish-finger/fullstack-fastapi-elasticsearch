@@ -7,7 +7,7 @@ class TodoList {
     }
 
     public addUrl(url: string): Promise<any> {
-        return API.post(`address`, { url: url });
+        return API.post(`host/url`, { url: url });
     }
     
 }
