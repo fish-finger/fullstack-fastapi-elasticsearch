@@ -1,8 +1,9 @@
 {
-    "serve": "./dist",
-    "port": 8099,
+    "serve": "dist",
+    "port": 4000,
     "watchexps": [
-        "**.js",
-        "**.css"
-    ]
+        "dist/**"
+    ],
+    "open": true,
+    "historyindex": "./index.html"
 }
