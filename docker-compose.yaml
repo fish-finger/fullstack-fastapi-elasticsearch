@@ -2,6 +2,8 @@ version: '2.0'
 services:
   backend:
     build: ./src/backend/
+    environment:
+      - ELASTICSEARCH_HOST=database
     ports:
       - "8000:8000"
     depends_on:

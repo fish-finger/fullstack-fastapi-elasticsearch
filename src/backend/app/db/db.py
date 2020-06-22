@@ -1,8 +1,9 @@
 from elasticsearch import Elasticsearch
+from core.config import settings
 
 class Database:
     def __init__(self):
-        self.__es = Elasticsearch(['database'], port=9200)
+        self.__es = Elasticsearch([settings.ELASTICSEARCH_HOST], port=9200)
 
     def index(self, index, body):
         try:
