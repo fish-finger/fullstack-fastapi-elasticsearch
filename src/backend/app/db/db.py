@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch
 
 class Database:
     def __init__(self):
-        self.__es = Elasticsearch()
+        self.__es = Elasticsearch(['database'], port=9200)
 
     def index(self, index, body):
         try:
