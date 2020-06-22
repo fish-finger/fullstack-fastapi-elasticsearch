@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { todoList } from '../../controller';
+import { List } from '../../components/List';
 import './style.css';
 
+const onClickOpenUrlOnBrowser = (url: string) => (window.open(url, '_blank'));
+
 export const Home = () => {
-    let isLoading = true;
     const [textInput, setTextInput] = React.useState(`http://`);
     const [urlList, setUrlList] = React.useState([]);
     const loadUrlList = async () => {
@@ -38,22 +40,14 @@ export const Home = () => {
                         onChange={handleChange}/>
                     <button className="button button-full"
                             type="button"
-                            onClick={() => onClickDownload()}>Download</button>
+                            onClick={() => onClickDownload()}>Send</button>
                 </div>
             </div>
             <div className="list-urls-sec">
-                <ul>
-                    {
-                        urlList.map((url, i) => {
-                            return ( 
-                                    <li key={i}>
-                                        <a href={url._source.url} 
-                                        target="_blank">{url._source.url}</a>
-                                    </li>
-                            );
-                        })
-                    }
-                </ul>
+                <List 
+                    items={urlList}
+                    onClickEvent={onClickOpenUrlOnBrowser}
+                />
             </div>
         </div>
     );
