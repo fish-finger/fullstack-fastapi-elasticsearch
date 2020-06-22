@@ -49,4 +49,4 @@ For running frontend:
 
 1. Navigate to the project repository
 2. run the `docker-compose up`
-3. Open the http://localhost:8099 on browser
+3. Open the http://localhost:4000 on browser
